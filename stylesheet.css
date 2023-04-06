@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper-cover{
+    margin: 2rem auto;
+    background-image: url(./Screenshot\ from\ 2023-03-03\ 21-45-25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.25rem;
+    flex-shrink: auto;
+}
+
+.nav{
+    margin: 0 40%;
+    flex-shrink: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.elements-wrap{
+    margin: 2rem 3%;
+}
+
+.input-wrap{
+    margin: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: auto;
+    /* padding-left: 1rem; */
+}
+
+.InputTodo{
+    margin-left: 25%;
+    flex-shrink: auto;
+}
+
+
+.input-wrap input{
+    padding: 0.65rem 1rem;
+    border: 0.5px;
+    border-radius: 12px;
+}
+
+.search-todo{
+    margin-left: 1.45rem;
+}
+
+.input-wrap button{
+    background-color: rgb(101, 101, 221);
+    margin-left: 0.30rem;
+    padding: 5px 6px;
+    border: 0.75px solid gray;
+    border-radius: 15%;
+    font-size: 12px;
+    box-shadow: rgb(123, 135, 134) 2px 2px 4px 2px;
+}
+
+.input-wrap button:hover{
+    background-color: rgb(49, 49, 226);
+}
+
+ol{
+    margin: 2rem 2%;
+}
+
+li{
+    font-size: 24px;
+    padding: 1rem 0.65rem;
+    margin: 3rem 4%;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li button{
+    margin-left: 10px;
+    padding: 2px 4px;
+}

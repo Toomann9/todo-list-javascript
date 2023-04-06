@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css"> -->
+    <title>Todo list</title>
+
+</head>
+<body>
+
+    <!-- second line -->
+    
+    <div class="wrapper-cover">
+
+        <div class="nav">
+            <h1>To-Do List</h1>
+        </div>
+
+        <div class="elements-wrap">
+
+            <div class="input-wrap">
+
+                <form onsubmit="return false;" class="formInputTodo">
+                    <!-- <input type="text" id="taskInput" placeholder="Enter Activity" /> -->
+                    <button onclick="addTodo()">Add Todo</button>
+                </form>
+                <input type="text" class="InputTodo" id="searchInput" onkeyup="search()" placeholder="Search Here" />
+
+            </div>
+
+            <ol id="todoList">
+                <li id="firstTodo" ><a href="#" class="list">Exercise</a>
+                    <input type="checkbox" id="inputCheck">
+                    <button onclick="editTodo(this.parentNode, this.previousSibling)" id="editBtn">Edit</button>
+                    <button id="deleteTodo" onclick="deleteTodo(this.parentNode)">Remove</button>
+                </li>
+
+                <li id="secondTodo" ><a href="#" class="list">Eat</a>
+                    <input type="checkbox" id="inputCheck">
+                    <button onclick="editTodo(this.parentNode, this.previousSibling)" id="editBtn">Edit</button>
+                    <button id="deleteTodo" onclick="deleteTodo(this.parentNode)">Remove</button>
+                </li>
+
+                <li id="thirdTodo" ><a href="#" class="list">Code</a>
+                    <input type="checkbox" id="inputCheck">
+                    <button onclick="editTodo(this.parentNode, this.previousSibling)" id="editBtn">Edit</button>
+                    <button id="deleteTodo" onclick="deleteTodo(this.parentNode)">Remove</button>
+                </li>
+
+                <li id="fourthTodo" ><a href="#" class="list">Music Practice</a>
+                    <input type="checkbox" id="inputCheck">
+                    <button onclick="editTodo(this.parentNode, this.previousSibling)" id="editBtn">Edit</button>
+                    <button id="deleteTodo" onclick="deleteTodo(this.parentNode)">Remove</button>
+                </li>
+            </ol>
+
+        </div>
+            
+        <audio src="./Davido-FOR-THE-ROAD-Official-Aud.mp3" autoplay loop></audio>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
