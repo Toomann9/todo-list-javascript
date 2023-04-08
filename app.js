@@ -66,9 +66,9 @@ function editTodo(item) {
     
 // });
 
-function toggleCheckbox() {
-    let checkboxTwo = document.getElementById("inputCheck");
-    let link = document.getElementById("listLink");
+function toggleCheckbox(checkboxId, linkId) {
+    let checkboxTwo = document.getElementById(checkboxId);
+    let link = document.getElementById(linkId);
 
     // checkboxTwo.checked = !checkboxTwo.checked;
     if (checkboxTwo.checked) {

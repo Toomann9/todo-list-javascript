@@ -20,7 +20,8 @@
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.22em;
+    text-align: center;
 }
 
 .elements-wrap{
