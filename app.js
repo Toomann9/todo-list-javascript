@@ -22,7 +22,6 @@ function search() {
 
 // Delete Todo
 
-
 function deleteTodo(item) {
     item.parentNode.removeChild(item);
 }
@@ -67,6 +66,21 @@ function editTodo(item) {
     
 // });
 
+function toggleCheckbox() {
+    let checkboxTwo = document.getElementById("inputCheck");
+    let link = document.getElementById("listLink");
+
+    // checkboxTwo.checked = !checkboxTwo.checked;
+    if (checkboxTwo.checked) {
+      link.style.textDecoration = "line-through";
+      link.style.color = "gray";
+    } else {
+      link.style.textDecoration = "none";
+      link.style.color = "black";
+    }
+  }
+
+
 function toggleCompleted(item, checkbox) {
 
     if (checkbox.checked) {
@@ -85,11 +99,13 @@ function addTodo() {
     if (text) {
         let list = document.getElementById("todoList");
         let item = document.createElement("li");
+        // item.getElementsByTagName = list.getElementsByTagName('li');
         let textNode = document.createTextNode(text);
         item.appendChild(textNode);
 
         let checkbox = document.createElement("input");
 				checkbox.type = "checkbox";
+                checkbox.id = "inputCheck";
 				checkbox.onchange = function() {
 					toggleCompleted(item, checkbox);
 				};
@@ -112,5 +128,6 @@ function addTodo() {
         list.appendChild(item);
         
     }
+    // search ();
 
 }
